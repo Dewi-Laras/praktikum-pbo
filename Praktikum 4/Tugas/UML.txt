@@ -1,8 +1,8 @@
 					+-------------------------------------+ 
 					|              Pegawai                |  (Superclass)
 					+-------------------------------------+ 
-					| - nip: String    	    	     	  | 
-					| - nama: String   	     	          | 
+					| - nip: String    	    	      | 
+					| - nama: String   	     	      | 
 					| - tanggalLahir: LocalDate           | 
 					| - tmt: LocalDate                    | 
 					| - gajiPokok: double                 | 
@@ -11,24 +11,24 @@
 					| + formatTanggal(LocalDate): String  | 
 					| + printInfo(): void                 | 
 					+-------------------------------------+ 
-       	         					  | 
-      		 					      v 
+       	         					   | 
+      		 			                   v 
 			       			+----------------------+ 
-	               			|         Dosen        |  (Subclass dari Pegawai)	 
+	               			        |         Dosen        |  (Subclass dari Pegawai)	 
 			       			+----------------------+ 
-	               			| - fakultas: String   | 
-	               			+----------------------+ 
-	               			| + printInfo(): void  | 
-	               			+----------------------+ 
-                           	  |                	  |
-                              v                	  v
-       +-----------------------------+          +------------------------------+ 
-       |          DosenTetap         |          |           DosenTamu          | 
-       |       (Subclass Dosen)      |          |        (Subclass Dosen)      | 
-       +-----------------------------+          +------------------------------+ 
-       | - nidn: String              |          | - nidk: String               | 
-       | - hitungBUP(): LocalDate    |          | - kontrakBerakhir: LocalDate | 
-       | - hitungTunjangan(): double |          | - hitungTunjangan(): double  | 
-       +-----------------------------+          +------------------------------+ 
-       | + printInfo(): void         |          | + printInfo(): void          | 
-       +-----------------------------+          +------------------------------+ 
+	               			        | - fakultas: String   | 
+	               			        +----------------------+ 
+	               			        | + printInfo(): void  | 
+	               			        +----------------------+ 
+                           	                  |                  |
+                                                  v                  v
+                        +-----------------------------+          +------------------------------+ 
+                        |          DosenTetap         |          |           DosenTamu          | 
+                        |       (Subclass Dosen)      |          |        (Subclass Dosen)      | 
+                        +-----------------------------+          +------------------------------+ 
+                        | - nidn: String              |          | - nidk: String               | 
+                        | - hitungBUP(): LocalDate    |          | - kontrakBerakhir: LocalDate | 
+                        | - hitungTunjangan(): double |          | - hitungTunjangan(): double  | 
+                        +-----------------------------+          +------------------------------+ 
+                        | + printInfo(): void         |          | + printInfo(): void          | 
+                        +-----------------------------+          +------------------------------+ 
